@@ -1,4 +1,6 @@
-FROM node:10-slim as core
+FROM node:20-bookworm-slim as core
+
+#FROM node:trixie-slim as core
 
 # Install latest chrome dev package and fonts to support major charsets (Chinese, Japanese, Arabic, Hebrew, Thai and a few others)
 # Note: this installs the necessary libs to make the bundled version of Chromium that Puppeteer
